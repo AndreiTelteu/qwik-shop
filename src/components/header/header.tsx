@@ -12,7 +12,7 @@ export default component$(
       <Host>
         <div class="header-inner">
           <section class="logo">
-            <a href="/">Qwik City 🏙</a>
+            <a href="/">Shop</a>
           </section>
           <nav>
             <a href="/blog" class={{ active: pathname.startsWith('/blog') }}>
@@ -28,7 +28,7 @@ export default component$(
               Products
             </a>
             <a href="/about-us" class={{ active: pathname.startsWith('/about-us') }}>
-              About Us
+              About Us <span class="material-symbols-outlined">shopping_cart</span>
             </a>
           </nav>
         </div>

@@ -1,18 +1,20 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useStyles$ } from '@builder.io/qwik';
 import { useDocumentHead, useLocation } from '@builder.io/qwik-city';
 import { Analytics } from './analytics';
 import { Social } from './social';
+import fonts from '~/fonts.css?inline';
 
 export const Head = component$(
   () => {
     const head = useDocumentHead();
     const loc = useLocation();
+    useStyles$(fonts);
 
     return (
       <>
         <meta charSet="utf-8" />
 
-        <title>{head.title ? `${head.title} - Qwik` : `Qwik`}</title>
+        <title>{head.title ? `${head.title} - Shop` : `Shop`}</title>
 
         <link rel="canonical" href={loc.href} />
 

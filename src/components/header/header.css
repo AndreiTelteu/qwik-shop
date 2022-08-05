@@ -9,6 +9,10 @@ header .header-inner {
   max-width: 800px;
   margin: 0 auto;
 }
+header .logo a {
+  font-family: Poppins, Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+}
 
 .full-screen header .header-inner {
   max-width: 100%;
