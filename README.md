@@ -1,5 +1,7 @@
 # Qwik qwik-shop ⚡️
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c0d3d78-116b-493c-8543-d907f70c6e0a/deploy-status)](https://app.netlify.com/sites/qwik-shop/deploys)
+
 - File based routing and MDX support
 - Vite.js tooling.
 - Express.js server.
