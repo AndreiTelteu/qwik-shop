@@ -9,7 +9,6 @@ export default component$(() => {
     const data: any = await rsp.json();
 
     store.timestamp = data.timestamp;
-    store.os = data.os;
     store.arch = data.arch;
     store.node = data.node;
   });

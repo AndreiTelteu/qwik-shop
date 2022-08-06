@@ -27,7 +27,7 @@
     "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "5.30.7",
     "@typescript-eslint/parser": "5.30.7",
-    "@netlify/vite-plugin-netlify-edge": "^1.1.0",
+    "@netlify/vite-plugin-netlify-edge": "1.1.0",
     "eslint": "8.20.0",
     "eslint-plugin-qwik": "0.0.39",
     "express": "4.17.3",
@@ -47,14 +47,5 @@
   "type": "module",
   "dependencies": {
     "material-symbols": "^0.2.7"
-  },
-  "qwik": {
-    "priority": -1,
-    "vite": {
-      "VITE_IMPORTS": "import netlifyEdge from '@netlify/vite-plugin-netlify-edge';",
-      "VITE_CONFIG": "",
-      "VITE_QWIK": "{ ssr: { outDir: '.netlify/edge-functions/entry.netlify' } }",
-      "VITE_PLUGINS": "netlifyEdge({ functionName: 'entry.netlify' }),"
-    }
   }
 }

@@ -79,7 +79,7 @@
     unist-util-visit "^4.0.0"
     vfile "^5.0.0"
 
-"@netlify/vite-plugin-netlify-edge@^1.1.0":
+"@netlify/vite-plugin-netlify-edge@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@netlify/vite-plugin-netlify-edge/-/vite-plugin-netlify-edge-1.1.0.tgz#7ef56bad3bf14b133d493735c07e5f5e5f2573fe"
   integrity sha512-Z99j8uVW1pD/Ye9Bfm9r3wMQsvWkyuh1w/G721L7oKg4aaut6onWIxelu4N/uVM9qFFtZ2u+xWWJEdOcr5iiOA==
