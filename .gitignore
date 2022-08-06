@@ -39,5 +39,3 @@ lerna-debug.log*
 !.yarn/releases
 !.yarn/cache
 
-# Local Netlify folder
-.netlify
