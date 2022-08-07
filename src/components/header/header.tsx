@@ -21,25 +21,48 @@ export default component$(() => {
             <a href="/">Shop</a>
           </section>
           <nav>
-            {menuItems.map(item => (
-              <div class="menu-item-wrapper">
-                <a href={item.href || '#'} class={{
-                  'menu-item': true,
-                  'menu-item-active': pathname.startsWith('/blog'),
-                }}>
-                  <span>{item.name as any}</span>
-                </a>
-                {item.items && item.items?.length > 0 ? (
-                  <div class="menu-item-subitems">
-                    {item.items.map(subItem => (
-                      <a href={subItem.href || '#'} class="menu-subitem">
-                        <span>{subItem.name as any}</span>
-                      </a>
-                    ))}
-                  </div>
-                ) : null}
-              </div>
-            ))}
+            {menuItems.map(item => {
+              let isDeep = false;
+              if (item.items && item.items?.length > 0) {
+                item.items.forEach(subItem => {
+                  if (subItem.items && subItem.items?.length > 0) isDeep = true;
+                });
+              }
+              return (
+                <div class={`menu-item-wrapper ${isDeep ? 'is-deep' : 'not-deep'}`}>
+                  <a href={item.href || '#'} class={{
+                    'menu-item': true,
+                    'menu-item-active': pathname.startsWith(item.href || 'nothing'),
+                  }}>
+                    <span>{item.name as any}</span>
+                  </a>
+                  {item.items && item.items?.length > 0 ? (
+                    <div class="menu-item-subitems">
+                      <div class="menu-item-subitems-inner">
+                        {item.items.map(subItem => (
+                          <div class="menu-subitem is-bold">
+                            <a href={subItem.href || '#'}>
+                              <span>{subItem.name as any}</span>
+                            </a>
+                            {subItem.items && subItem.items?.length > 0 ? (
+                              <div class="menu-subitem-items">
+                                {subItem.items.map(subSubItem => (
+                                  <div>
+                                    <a href={subSubItem.href || '#'}>
+                                      <span>{subSubItem.name as any}</span>
+                                    </a>
+                                  </div>
+                                ))}
+                              </div>
+                            ) : null}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              );
+            })}
           </nav>
         </div>
       </div>

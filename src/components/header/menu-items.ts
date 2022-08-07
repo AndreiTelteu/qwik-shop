@@ -11,6 +11,7 @@ export const menuItems: MenuItems = [
     
     {
         name: 'Pacienti',
+        href: '/#',
         items: [
             {
                 name: 'Analize medicale si preturi',

@@ -22,18 +22,6 @@ export default component$(() => {
       <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
       <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
       <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
 
       <p>The meta-framework for Qwik.</p>
     </Host>
@@ -41,5 +29,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik Cityss',
+  title: 'Homepage',
 };
