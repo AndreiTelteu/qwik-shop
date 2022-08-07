@@ -2,7 +2,7 @@ import { component$, useStyles$ } from '@builder.io/qwik';
 import { useDocumentHead, useLocation } from '@builder.io/qwik-city';
 import { Analytics } from './analytics';
 import { Social } from './social';
-import fonts from '~/fonts.css?inline';
+import fonts from '~/fonts.scss?inline';
 
 export const Head = component$(
   () => {

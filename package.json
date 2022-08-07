@@ -41,8 +41,5 @@
   "license": "",
   "private": true,
   "type": "module",
-  "dependencies": {
-    "material-symbols": "^0.2.7"
-  },
   "packageManager": "yarn@3.2.2"
 }

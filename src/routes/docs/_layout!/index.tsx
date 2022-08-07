@@ -13,7 +13,6 @@ export default component$(() => {
     <Host class="docs full-screen">
       <Header />
       <main>
-        <Menu />
         <section class="docs-content">
           <Breadcrumbs />
           <Slot />
