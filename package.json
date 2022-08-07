@@ -41,5 +41,8 @@
   "license": "",
   "private": true,
   "type": "module",
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.2",
+  "dependencies": {
+    "swiper": "^8.3.2"
+  }
 }

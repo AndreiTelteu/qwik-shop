@@ -1,27 +1,11 @@
 import { component$, Host } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import SwiperBlock from '~/components/SwiperBlock/SwiperBlock';
 
 export default component$(() => {
   return (
     <Host>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
-      <h1 onClick$={() => console.warn('hola')}>Welcome to Qwik City</h1>
+      <SwiperBlock />
 
       <p>The meta-framework for Qwik.</p>
     </Host>
